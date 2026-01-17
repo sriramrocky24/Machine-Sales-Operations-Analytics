@@ -1,0 +1,70 @@
+import pandas as pd
+
+# -----------------------------
+# 1) Inventory_Details  (NOTE: "Product Price " has trailing space)
+# -----------------------------
+inventory_details = pd.DataFrame([
+    {"Product ID": 1, "Product Name": "IronTech 350X",  "Category": "Industrial",  "Product Price ": 23327, "Manufactured Date": "2024-02-24", "Serviced Date": "2024-08-26", "People Opinion": "Excellent"},
+    {"Product ID": 2, "Product Name": "AgriForce 225",  "Category": "Agriculture", "Product Price ": 16891, "Manufactured Date": "2024-03-18", "Serviced Date": "2024-09-20", "People Opinion": "Good"},
+    {"Product ID": 3, "Product Name": "SteelPro M750",  "Category": "Industrial",  "Product Price ": 15578, "Manufactured Date": "2024-04-12", "Serviced Date": "2024-10-14", "People Opinion": "Awesome"},
+    {"Product ID": 4, "Product Name": "FieldPro S410",  "Category": "Agriculture", "Product Price ": 14504, "Manufactured Date": "2024-05-06", "Serviced Date": "2024-11-08", "People Opinion": "Wonderful"},
+])
+
+# -----------------------------
+# 2) Sales_Records
+# -----------------------------
+sales_records = pd.DataFrame([
+    {"Product ID": 1, "Sale ID": 1, "Sold Date": "2025-02-20", "Quantity Sold": 32, "Product Revenue": 91443, "Machine Weight": "800 kg",  "Warranty Period": "2 Years"},
+    {"Product ID": 2, "Sale ID": 2, "Sold Date": "2025-03-14", "Quantity Sold": 50, "Product Revenue": 92399, "Machine Weight": "1000 kg", "Warranty Period": "3 Years"},
+    {"Product ID": 3, "Sale ID": 3, "Sold Date": "2025-04-08", "Quantity Sold": 26, "Product Revenue": 99845, "Machine Weight": "1200 kg", "Warranty Period": "5 Years"},
+    {"Product ID": 4, "Sale ID": 4, "Sold Date": "2025-05-02", "Quantity Sold": 35, "Product Revenue": 85269, "Machine Weight": "1400 kg", "Warranty Period": "7 Years"},
+])
+
+# -----------------------------
+# 3) Zone_Overview
+# -----------------------------
+zone_overview = pd.DataFrame([
+    {"Product ID": 1, "Zone Name": "North", "Zone Type": "Urban", "Maintenance Cost": 31574, "Machine Usage(HRS)": 1000},
+    {"Product ID": 2, "Zone Name": "South", "Zone Type": "Urban", "Maintenance Cost": 29168, "Machine Usage(HRS)": 1200},
+    {"Product ID": 3, "Zone Name": "East",  "Zone Type": "Rural", "Maintenance Cost": 30242, "Machine Usage(HRS)": 1400},
+    {"Product ID": 4, "Zone Name": "West",  "Zone Type": "Rural", "Maintenance Cost": 25320, "Machine Usage(HRS)": 1600},
+])
+
+# -----------------------------
+# 4) Category_Metrics
+# -----------------------------
+category_metrics = pd.DataFrame([
+    {"Category ID": 1, "Category Name": "Industrial",  "Category Description": "Machines for industrial use",           "Average Machine Speed(RPM)": 1500, "Average Load Capacity(KG)": 3000},
+    {"Category ID": 2, "Category Name": "Agriculture", "Category Description": "Machines for farming and agriculture", "Average Machine Speed(RPM)": 900,  "Average Load Capacity(KG)": 1200},
+])
+
+# -----------------------------
+# 5) Suppliers_Profile (NOTE: Column name is "Email I'D")
+# -----------------------------
+suppliers_profile = pd.DataFrame([
+    {"Supplier ID": 1, "Supplier Name": "Murugan Industrial Tools Center",   "Zone Name": "North", "Product Supplied": "IronTech 350X",  "Quantity Supplied": 45, "Contact Number": "+91 8243999405", "Email I'D": "primesuppliespvtltd@gmail.com"},
+    {"Supplier ID": 2, "Supplier Name": "Sri Amman Tractor & Tools",         "Zone Name": "South", "Product Supplied": "AgriForce 225",  "Quantity Supplied": 60, "Contact Number": "+91 9132459576", "Email I'D": "agrisourceco@gmail.com"},
+    {"Supplier ID": 3, "Supplier Name": "Sri Ramanuja Engineering Traders",  "Zone Name": "East",  "Product Supplied": "SteelPro M750",  "Quantity Supplied": 38, "Contact Number": "+91 9801169630", "Email I'D": "industrialconnectltd@gmail.com"},
+    {"Supplier ID": 4, "Supplier Name": "Anbu Agro Engineering Agency",      "Zone Name": "West",  "Product Supplied": "FieldPro S410",  "Quantity Supplied": 50, "Contact Number": "+91 7701371182", "Email I'D": "supplierd@gmail.com"},
+])
+
+# -----------------------------
+# Export Excel (Same sheet names)
+# -----------------------------
+output_file = "Machine Business Dataset.xlsx"
+
+with pd.ExcelWriter(output_file, engine="openpyxl") as writer:
+    inventory_details.to_excel(writer, sheet_name="Inventory_Details", index=False)
+    sales_records.to_excel(writer, sheet_name="Sales_Records", index=False)
+    zone_overview.to_excel(writer, sheet_name="Zone_Overview", index=False)
+    category_metrics.to_excel(writer, sheet_name="Category_Metrics", index=False)
+    suppliers_profile.to_excel(writer, sheet_name="Suppliers_Profile", index=False)
+
+print("✅ Excel generated:", output_file)
+
+# (Optional) Show datasets
+display(inventory_details)
+display(sales_records)
+display(zone_overview)
+display(category_metrics)
+display(suppliers_profile)
