@@ -1,0 +1,38 @@
+📑 Business Summary:
+This project is a Power BI dashboard created to analyze machine business performance across sales, profit, supply chain and operations. It enables zone-wise and product-wise insights to support business decisions like identifying top revenue zones, profitability drivers, supply-demand gaps and machine maintenance impact.
+
+🎯 Objectives & Focus:
+Monitor overall Revenue, Price, Profit and machine performances.
+Compare performance by Zone Name(South/North/East/West) and Zone Type(Urban/Rural).
+Track product Supplied vs Sold to identify distribution gaps.
+Evaluate Machine Usage Hours and Maintenance Cost for operational efficiency.
+
+🌍 Analysis Coverage:
+Zone-wise | Product-wise | Category-wise.
+
+📈 Performance Indicators:
+Total Revenue.
+Total Price.
+Total Profit.
+Average Profit.
+Quantity Supplied.
+Quantity Sold.
+Machine Usage(HRS).
+Maintenance Cost.
+
+🗂️ Report Structure:
+Sales & Revenue Performance – Revenue and price split by zone wise & product wise.
+Profit Analysis – Total and average profit view by zone wise and product wise.
+Supply & Distribution – product Supplied vs sold quantity comparison.
+Machine Performance & Usage – Machine hours and Maintenance cost evaluation.
+
+🏆 Results & Value:
+Identified top-performing zones/products to support targeting decisions.
+Analyzed supply vs sales gaps to improve distribution efficiency.
+Tracked maintenance vs usage patterns to support service planning.
+
+🎛️ Control Panel:
+Slicers used: Product ID, Sale ID, Category ID and Supplier ID.
+
+🛠 Technology Used:
+Python (dataset preparation) | Excel | Basic DAX | Data Modeling | Power BI.
