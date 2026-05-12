@@ -1,75 +1,157 @@
-### Machine Sales Operations Analytics 🏭
+# 🏭 Machine Sales Operations Analytics
 
-### Overview 📖
+## 📖 Project Overview
 
-This project focuses on analyzing machine sales, profitability, supplier performance, and operational trends using Excel, Python, Power BI and DAX. The dashboard provides insights into sales growth, profit performance, supplier efficiency, regional business trends and machine productivity. It helps identify high-performing machine categories, low-performing areas, and operational patterns that can support better business monitoring and decision-making.
+This project is a business analytics dashboard developed using Power BI, Python, Excel, and DAX to analyze machine sales, profitability, supply distribution, and operational performance.
 
-### Tools & Technologies 🛠️
+The dashboard provides product-wise, zone-wise, and category-wise insights to help monitor revenue trends, profit performance, machine usage, supplier contribution, and maintenance efficiency.
 
+---
+
+# 🎯 Business Objectives
+
+* Monitor Revenue, Profit, Quantity Sold, and Machine Usage.
+* Compare business performance across Zones and Zone Types.
+* Identify high-performing products and profitable categories.
+* Analyze Supply vs Sales gaps for better distribution planning.
+* Track Maintenance Cost and Machine Usage for operational monitoring.
+
+---
+
+# 🛠️ Tools & Technologies
+
+* Python (Dataset Preparation) 
 * Excel
-* Python
 * Power BI
-* DAX
+* Basic DAX
+* Data Modeling
 
-### Key KPIs 📈
+---
 
-* Total Sales
-* Total Profit
-* Quantity Sold
+# 🗂️ Dataset Structure
+
+The project uses multiple related datasets:
+
+| Table Name        | Purpose                              |
+| ----------------- | ------------------------------------ |
+| Inventory_Details | Product and machine information      |
+| Sales_Records     | Revenue and sales tracking           |
+| Zone_Overview     | Zone-wise operations and maintenance |
+| Category_Metrics  | Category performance metrics         |
+| Suppliers_Profile | Supplier and distribution details    |
+
+---
+
+# 📊 Key Performance Indicators (KPIs)
+
 * Total Revenue
-* Total Price
-* Supplier Performance
-* Machine Performace
-* Regional Performance
+* Total Profit
+* Average Profit
+* Quantity Supplied
+* Quantity Sold
+* Machine Usage (HRS)
+* Maintenance Cost
+* Zone-wise Performance
+* Product-wise Performance
 
-### Dashboard Features 📊
+---
 
-✅ Sales & Profit Tracking
+# 📈 Dashboard Pages
 
-✅ Supplier Performance Analysis
+## 1️⃣ Sales & Revenue Performance
 
-✅ Machine Category Comparison
+* Revenue and price analysis by Zone Name and Zone Type.
+* Product-wise revenue contribution analysis.
+* Revenue comparison across business regions.
 
-✅ Regional Business Insights
+## 2️⃣ Profit Analysis
 
-✅ Operational KPI Monitoring
+* Total Profit and Average Profit tracking.
+* Zone-wise and product-wise profitability comparison.
+* Profit trend evaluation across machine categories.
 
-✅ Interactive Power BI Visualizations
+## 3️⃣ Supply & Distribution Analysis
 
-### Business Insights 🔥
+* Quantity Supplied vs Quantity Sold comparison.
+* Supplier contribution tracking.
+* Distribution gap identification across regions.
 
-* Several regions achieved strong sales performance but delivered lower profit margins, highlighting hidden operational and cost management challenges.
+## 4️⃣ Machine Performance & Usage
 
-* Supplier comparison revealed major differences in delivery consistency, sales contribution, and overall business performance.
+* Machine Usage(HRS) analysis.
+* Maintenance Cost comparison by products and categories.
+* Operational efficiency monitoring.
 
-* A few machine categories generated higher profitability with lower sales volume, indicating stronger product value and better margin performance.
+---
 
-* Regional trend analysis helped identify both high-growth business areas and underperforming locations requiring operational improvement.
+# 🔥 Business Insights
 
-* The dashboard provided a centralized business view to track sales, profit, supplier activity, and machine performance more effectively.
+* East zone generated strong revenue and profit performance.
+* Urban zones showed slightly better supply efficiency.
+* IronTech 350X generated high revenue but also higher maintenance cost.
+* FieldPro S410 recorded high machine usage with lower maintenance expense.
+* Supply vs Sales analysis helped identify distribution gaps and operational imbalance.
 
-### Skills Demonstrated 🎯
+---
+
+# 🎛️ Interactive Features
+
+Slicers used in the dashboard:
+
+* Product ID
+* Sale ID
+* Category ID
+* Supplier ID
+
+---
+
+# 🎯 Skills Demonstrated
 
 * Data Cleaning & Transformation
+* Data Modeling
 * Data Visualization
 * KPI Development
-* Dashboard Design
 * DAX Calculations
 * Business Data Interpretation
+* Dashboard Design
 * Analytical Problem-Solving
-* Performance Trend Analysis
 
-### Conclusion 🌟
+---
 
-This project shows how operational and sales data can be transformed into meaningful business insights using Power BI and Python. The dashboard helps businesses monitor profitability, supplier efficiency, sales trends, and operational performance through a centralized analytics view. It also supports better business planning by identifying performance gaps, operational inefficiencies, and high-performing business areas.
+# 🌟 Project Outcome
 
-## Files 🧾
-- Machine_Sales_Operations_Analytics.pbix (Dashboard file)
-- Machine Business Dataset.xlsx (Dataset)
-- Screenshots (Dashboard images+Data Model)
-- Python Coding in Notepad
+This project demonstrates how machine business data can be transformed into actionable business insights using Power BI and Python.
 
-## How to Open 🖥️
-1. Download PBIX file
-2. Open in Power BI Desktop
-3. Explore dashboard
+The dashboard helps monitor:
+
+* sales performance
+* profitability
+* operational efficiency
+* supplier contribution
+* maintenance trends
+* distribution effectiveness
+
+through a centralized analytics solution.
+
+---
+
+# 🧾 Project Files
+
+* `Machine_Sales_Operations_Analytics.pbix`
+* `Machine Business Dataset.xlsx`
+* Dashboard Screenshots
+* Python Dataset Preparation File
+
+---
+
+# 🖥️ How to Open
+
+1. Download the `.pbix` file
+2. Open using Power BI Desktop
+3. Explore the dashboard pages and slicers
+
+---
+
+# 📌 Conclusion
+
+This project combines sales analytics, operational monitoring, and business intelligence into a single Power BI solution.
