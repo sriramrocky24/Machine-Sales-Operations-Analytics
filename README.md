@@ -1,4 +1,4 @@
-# 🏭 Machine Sales Operations Analytics
+# 🏭 Machine Business Analytics Dashboard
 
 ## 📖 Project Overview
 
